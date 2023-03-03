@@ -1,4 +1,4 @@
-package org.example;
+package edu.njara.oca;
 
 public class Main {
     public static void main(String[] args) {
