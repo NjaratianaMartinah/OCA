@@ -1,9 +1,8 @@
 package edu.njara.oca.javaapi.date;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 
 public class TimeAPi {
 
@@ -25,5 +24,33 @@ public class TimeAPi {
         System.out.println(localTime1);
         System.out.println(localTime2);
         System.out.println(localTime3);
+
+        LocalTime localTime8 = LocalTime.of(20,56,32).minusHours(28).minusMinutes(5).minusSeconds(2).minusNanos(45);;
+        System.out.println(localTime8);
+
+        //Period
+        Period period = Period.ofWeeks(1);
+       // localTime8.plus(period);    // throw UnsupportedTemporalTypeException : Unsupported unit: Days
+
+        //Formatting
+        LocalTime localTime9 = LocalTime.of(15,2,14);
+        System.out.println("ISO_LOCAL_TIME: " + localTime9.format(DateTimeFormatter.ISO_LOCAL_TIME));
+        //System.out.println("ISO_DATE_TIME" + localTime9.format(DateTimeFormatter.ISO_DATE_TIME)); // throw UnsupportedTemporalTypeException: Unsupported field: Year
+
+        //Formatting
+        DateTimeFormatter timeFormatterShort = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
+        DateTimeFormatter timeFormatterFull = DateTimeFormatter.ofLocalizedTime(FormatStyle.FULL);
+        DateTimeFormatter timeFormatterMedium = DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM);
+
+        System.out.println("SHORT: " + timeFormatterShort.format(localTime9));
+        System.out.println("MEDIUM: " + timeFormatterMedium.format(localTime9));
+        //timeFormatterFull.format(localTime9); //throw DateTimeException: Unable to extract ZoneId from temporal 15:02:14 with chronology ISO
+
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+        //dateTimeFormatter.format(localTime9); // throws UnsupportedTemporalTypeException: Unsupported field: MonthOfYear
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
+        //dateFormatter.format(localTime9); // throws UnsupportedTemporalTypeException: Unsupported field: MonthOfYear
+
+
     }
 }
