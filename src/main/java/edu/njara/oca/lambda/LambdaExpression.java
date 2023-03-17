@@ -1,4 +1,4 @@
-package lambda;
+package edu.njara.oca.lambda;
 
 import java.util.ArrayList;
 import java.util.List;
