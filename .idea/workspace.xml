@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a26a8a59-ce5c-4655-b7ed-711ed144f6bc" name="Changes" comment="init project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/njara/oca/javaapi/date/DateAPi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/njara/oca/javaapi/date/DateAPi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/edu/njara/oca/javaapi/date/DateTimeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/njara/oca/javaapi/date/DateTimeApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/njara/oca/javaapi/date/TimeAPi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/njara/oca/javaapi/date/TimeAPi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +140,17 @@
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
